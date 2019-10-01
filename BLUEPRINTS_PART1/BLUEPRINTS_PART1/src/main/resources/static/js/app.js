@@ -20,6 +20,9 @@ var module = (function () {
   return {
     publicMethod: function (nuevoNombreAutor) {
         this.authorName = nuevoNombreAutor;
+    },
+    publicMethod: function (author) {
+      apimock.getBlueprintByAuthor(author,actualizarPlanos)
     }
   };
 })();
