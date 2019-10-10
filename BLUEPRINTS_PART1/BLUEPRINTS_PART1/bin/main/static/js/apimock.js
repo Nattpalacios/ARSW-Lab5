@@ -4,16 +4,16 @@ apimock=(function(){
 
 
 
-   mockdata["Nat"]=[{"name":"Nat","functions":[{"movie":{"name":"Titanic Movie","genre":"Action"},"seats":[[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true]],"date":"2018-12-18 15:30"},{"movie":{"name":"The Purge","genre":"Horror"},"seats":[[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true]],"date":"2018-12-18 15:30"}]}];
-
-   mockdata["blueprint100"]=[{"name":"blueprint100","functions":[{"movie":{"name":"mision imposible","genre":"Fiction"},"seats":[[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true],[true,true,true,true,true,true,true,true,true,true,true,true]],"date":"2018-12-18 15:31"}]}];
+   mockdata["Natalia"]=[{"author":"Natalia","points":[{"x":10,"y":10},{"x":20,"y":20}],"name":"Natt"}];
+   mockdata["Natalia2"]=[{"author":"Natalia2","points":[{"x":20,"y":20},{"x":30,"y":30}],"name":"Natt2"}];
+   mockdata["Natalia3"]=[{"author":"Natalia3","points":[{"x":10,"y":10},{"x":30,"y":30}],"name":"Natt3"}]
 
 
 	return {
-		getCinemaByName:function(name,callback){
+		getBlueprintByAuthor:function(author,callback){
 			callback(
-				mockdata[name]
-			);
+				mockdata[author]
+			); 
 		}
 	}
 

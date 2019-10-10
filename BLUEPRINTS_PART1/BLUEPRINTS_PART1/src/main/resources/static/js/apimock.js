@@ -4,7 +4,7 @@ apimock=(function(){
 
 
 
-   mockdata["Natalia"]=[{"author":"Natalia","points":[{"x":10,"y":10},{"x":20,"y":20}],"name":"Natt"}];
+   mockdata["Natalia"]=[{"author":"Natalia","points":[{"x":10,"y":10},{"x":20,"y":20}],"name":"Natt"}, {"author":"Natalia","points":[{"x":10,"y":10},{"x":20,"y":20}],"name":"Natt2"}];
    mockdata["Natalia2"]=[{"author":"Natalia2","points":[{"x":20,"y":20},{"x":30,"y":30}],"name":"Natt2"}];
    mockdata["Natalia3"]=[{"author":"Natalia3","points":[{"x":10,"y":10},{"x":30,"y":30}],"name":"Natt3"}]
 
