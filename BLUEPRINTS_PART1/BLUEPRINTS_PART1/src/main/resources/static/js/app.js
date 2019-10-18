@@ -23,8 +23,20 @@ var module = (function () {
         '<td>'+numPoints+'<td>';
         $("#blueprints").append(txt);
     }
+  };
+  var sumarPuntos = function(){
+    var sumPuntos = [];
+    for(var i = 0; i < blueprints.length; i++){
+      var blueprint = blueprints[i];
+      sumPuntos.push(blueprint.points);
+    }
+    var suma = sumPuntos.reduce(function(a, b){return a + b});
+    var item = document.createElement('label');
+    item.innerHTML = suma;
+    InputEvent.setAtribute("id","PuntosDelAutor");
+    var pts = document.getElementById("puntosTotales");
+    pts.parentNode.appendChild(item);
   }
-
   return {
     cambiarNombreAutor: function (nuevoNombreAutor) {
       authorName = nuevoNombreAutor;
@@ -35,7 +47,9 @@ var module = (function () {
       var author = $('#inputAuthor').val();
       apimock.getBlueprintByAuthor(author,mapearBlueprints);
       this.agregarFilas();
+      this.sumarPuntos();
     },
-    agregarFilas: addRows
+    agregarFilas: addRows,
+    sumarPuntos: sumarPuntos
   };
 })();
